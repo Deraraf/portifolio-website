@@ -48,15 +48,6 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   const handleCopy = () => {
     const text = "derarageremu@gmail.com";
     navigator.clipboard.writeText(text);
@@ -159,9 +150,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-3 relative">
-              <div className="absolute -bottom-5 right-0">
-                <Lottie options={defaultOptions} />
-              </div>
+              <div className="absolute -bottom-5 right-0"></div>
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
