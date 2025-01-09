@@ -40,7 +40,7 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transworming Concept into Seamless User Experiance"
+            words="Transforming Concept into Seamless User Experiance"
           />
           <p className="text-center tracking-wider mb-4 text-sm md:text-lg lg:text-2xl mt-2">
             Hi, I&apos;m Derara Next.js Developer Based Croatia
