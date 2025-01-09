@@ -76,7 +76,7 @@ export const projects = [
     des: "Simplifying the process of requesting a new technology work.",
     img: "/tecnique-image-home-page.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://portifolio-website-rust.vercel.app",
+    link: "https://technique-one.vercel.app/",
   },
 
   {
