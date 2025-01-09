@@ -27,7 +27,7 @@ const RecentProject = () => {
                     className="object-cover"
                   />
                 </div>
-                <Image src={img} alt={title} fill className="object-cover" />
+                <Image src={img} alt={title} fill />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}

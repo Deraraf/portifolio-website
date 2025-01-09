@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Techinique Work Request",
     des: "Simplifying the process of requesting a new technology work.",
-    img: "/tecnique-image-home-page.png",
+    img: "/technic.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://technique-one.vercel.app",
   },
