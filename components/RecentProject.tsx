@@ -11,18 +11,23 @@ const RecentProject = () => {
         <span className="text-purple">recent projects</span>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center  gap-x-24 mt-10">
+      <div className="flex flex-wrap items-center justify-center gap-x-24 mt-10">
         {projects.map(({ iconLists, link, img, des, title, id }) => (
           <div
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[520px] md:w-[550px] w-[80vw] "
+            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[520px] md:w-[550px] w-[80vw]"
             key={id}
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[520px] md:w-[550px]  w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 ">
+              <div className="relative flex items-center justify-center sm:w-[520px] md:w-[550px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
-                  <Image src="/bg.png" alt="bg-img" fill />
+                  <Image
+                    src="/bg.png"
+                    alt="bg-img"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <Image src={img} alt={title} fill />
+                <Image src={img} alt={title} fill className="object-cover" />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
@@ -38,13 +43,13 @@ const RecentProject = () => {
                       key={icon}
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 flex justify-center items-center"
                       style={{
-                        transform: `transalateX(-${5 * index + 4}px)`,
+                        transform: `translateX(-${5 * index + 4}px)`,
                       }}
                     >
                       <Image
                         src={icon}
-                        alt="icon5"
-                        className="p-2 relative"
+                        alt="icon"
+                        className="p-2"
                         width={32}
                         height={32}
                       />
